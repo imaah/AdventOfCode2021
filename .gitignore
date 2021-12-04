@@ -1,2 +1,6 @@
 input.*
 languages.md
+
+# Removing the files for the ocaml language
+.merlin
+_build
