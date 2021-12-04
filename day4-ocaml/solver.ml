@@ -38,53 +38,6 @@ do
 done;;
 
 exception Found;;
-let result = ref 0 in
-try
-for num_i = 0 to (Array.length nums) - 1 do
-  let num = nums.(num_i) in
-  for g = 0 to (Array.length !grids) - 1 do
-    for y = 0 to 4 do
-      for x = 0 to 4 do
-        let cell = !grids.(g).(y).(x) in
-        if String.equal cell num then begin
-          !grids.(g).(y).(x) <- String.concat "-" ["";cell];
-        end;
-
-        let lineChecks = ref true in
-        for xl = 0 to 4 do
-          if (String.get !grids.(g).(y).(xl) 0) != '-' then begin 
-            lineChecks := false;
-          end;
-        done;
-
-        let colsChecks = ref true in
-        for yl = 0 to 4 do
-          if (String.get !grids.(g).(yl).(x) 0) != '-' then begin 
-            colsChecks := false;
-          end;
-        done;
-
-        if !lineChecks || !colsChecks then begin
-          for xl = 0 to 4 do
-            for yl = 0 to 4 do
-              if (String.get !grids.(g).(yl).(xl) 0) != '-' then begin
-                let num = Int.abs (Stdlib.int_of_string !grids.(g).(yl).(xl)) in
-                result := !result + num;
-              end;
-            done;
-          done;
-          result := (Stdlib.int_of_string num) * !result;
-          raise Found
-        end;
-      done;
-    done;
-  done;
-done;
-with Found ->
-  print_string "Part 1 : ";
-  print_int !result;
-  print_endline "";
-;;
 
 let winners = ref (List.init 0 (fun _ -> 0)) in
 let result = ref 0 in
@@ -114,6 +67,21 @@ for num_i = 0 to (Array.length nums) - 1 do
         done;
 
         if !lineChecks || !colsChecks then begin
+          if (List.length !winners) == 0 then begin
+            for xl = 0 to 4 do
+              for yl = 0 to 4 do
+                if (String.get !grids.(g).(yl).(xl) 0) != '-' then begin
+                  let n = Int.abs (Stdlib.int_of_string !grids.(g).(yl).(xl)) in
+                  result := !result + n;
+                end;
+              done;
+            done;
+            result := (Stdlib.int_of_string num) * !result;
+            print_string "Part 1 : ";
+            print_int !result;
+            print_endline "";
+            result := 0
+          end;
           try
             let _ = List.find (fun n -> n = g) !winners in ();
           with Not_found -> begin
