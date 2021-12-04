@@ -7,3 +7,4 @@ I try to use a different language every day.
 * day 1 : [APL](day1-apl)
 * day 2 : [SQL](day2-sql)
 * day 3 : [Scratch](day3-scratch)
+* day 4 : [OCaml](day4-ocaml)
