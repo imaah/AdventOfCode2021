@@ -8,3 +8,9 @@ I try to use a different language every day.
 * day 2 : [SQL](day2-sql)
 * day 3 : [Scratch](day3-scratch)
 * day 4 : [OCaml](day4-ocaml)
+* day 5 : [Bash](day5-bash)
+
+## Disclaimer ⚠
+Most of the languages I have used (or will use) for this challenge I have never used before, so my solutions may not be the best.
+
+If you have better solutions, I'd be happy to hear about them!
