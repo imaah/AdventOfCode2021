@@ -21,7 +21,3 @@ main = do
     let countNumsP1 = sum (map (\x -> countNums (x!!1)) inputs)
     print countNumsP1
 
-decode7seg :: Text -> Int
-decode7seg = error "not implemented"
-
-
