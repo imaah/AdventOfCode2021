@@ -12,6 +12,7 @@ I try to use a different language every day.
 * day 6 : [Spreadsheet](day6-spreadsheet) (why not ?)
 * day 7 : [Clojure](day7-clojure)
 * day 8 : [Haskell](day8-haskell) (only part 1)
+* day 9 : [Lua](day9-lua)
 
 ## Disclaimer ⚠
 Most of the languages I have used (or will use) for this challenge I have never used before, so my solutions may not be the best.
