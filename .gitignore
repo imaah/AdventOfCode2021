@@ -6,4 +6,7 @@ languages.md
 .merlin
 _build
 
+# Removing the files for the dart language
+day12-dart/app/
+
 .vscode

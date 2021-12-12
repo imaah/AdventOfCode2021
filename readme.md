@@ -15,6 +15,7 @@ I try to use a different language every day.
 * day 9  : [Lua](day9-lua)
 * day 10 : [Ruby](day10-ruby)
 * day 11 : [Perl](day11-perl)
+* day 12 : [Dart](day12-dart)
 
 ## Disclaimer ⚠
 Most of the languages I have used (or will use) for this challenge I have never used before, so my solutions may not be the best.
