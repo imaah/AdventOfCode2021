@@ -17,6 +17,7 @@ I try to use a different language every day.
 * day 11 : [Perl](day11-perl)
 * day 12 : [Dart](day12-dart)
 * day 13 : [Julia](day13-julia)
+* day 14 : [Rust](day14-rust)
 
 ## Disclaimer ⚠
 Most of the languages I have used (or will use) for this challenge I have never used before, so my solutions may not be the best.
